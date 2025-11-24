@@ -1,0 +1,73 @@
+.header-section{
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.header-section input{
+  flex:1;
+}
+
+.header-section button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 0.8rem 1rem;
+  flex: 0;
+}
+
+.search-btn-img{
+  width: 1rem;
+}
+
+/* mid */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-div img {
+  width: 8rem;
+}
+
+.degree-div-txt {
+  font-size: 3.5rem;
+}
+
+.city-name-div {
+  font-size: 1.8rem;
+}
+
+
+
+/* bottom */
+
+.bottom-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+
+.wind-cont , .humd-cont{
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+
+.humidity-div, .wind-div {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.hum-perct-txt, .wind-perct-txt {
+  font-size: 1.3rem;
+}
+
+.humd-text, .wind-text {
+  font-size: 0.8rem;
+}
