@@ -1,0 +1,1 @@
+export const userAPI = 'ddc26a972f9da120e197b0ecd235280a';
