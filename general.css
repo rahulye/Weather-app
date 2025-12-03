@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.934);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  background: linear-gradient(100deg, aqua, rgb(41, 115, 158));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem 1.8rem;
+  gap: 2rem;
+  margin: 6rem 1rem 3rem 1rem;
+}
+
+img {
+  user-select: none;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+input {
+  display: flex;
+  outline: 0;
+  border: 0;
+  padding: 0.8rem 1rem; 
+  border-radius: 1rem;
+  color: grey;
+  min-width: 0;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}

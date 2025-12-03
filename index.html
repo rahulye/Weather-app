@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherTV</title>
+  <link rel="icon" href="images/app-icon.png" type="images/png">
+
+  <link rel="stylesheet" href="style.css" type="Text/css">
+  <link rel="stylesheet" href="general.css" type="Text/css">
+</head>
+<body>
+  
+  <main>
+    
+    <section class="header-section">
+      <div class="header-section-top">
+        <input class="js-input" placeholder="Your City" spellcheck="false">
+        <button class="js-btn">
+          <img class="search-btn-img" src="images/search.png">
+        </button>
+      </div>
+      <p class="error-div js-error">Invalid Name</p>
+    </section>
+    
+    <section class="hero-section">
+      <div class="weather-div">
+        <img class="js-weather" src="">
+      </div>
+      <div class="degree-div-txt js-cityTemp"></div>
+      <div class="city-name-div js-cityName"></div>
+    </section>
+
+    <section class="bottom-section">
+      <div class="humd-cont">
+        <div class="humidity-div">
+          <img class="humidity-img" src="images/humidity.png">
+        </div>
+        <div class="humd-txt-cont">
+          <p class="hum-perct-txt js-humidity"></p>
+          <p class="humd-text">Humidity</p>
+        </div>
+      </div>
+
+      <div class="wind-cont">
+        <div class="wind-div">
+          <img class="wind-img" src="images/wind.png">
+        </div>
+        <div class="wind-txt-cont">
+          <p class="wind-perct-txt js-windSpeed"></p>
+          <p class="wind-text">Wind Speed</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+</body>
+
+<script type="module" src="script.js"></script>
+</html>
