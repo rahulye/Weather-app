@@ -5,11 +5,11 @@
 
 @layer base {
 	main {
-		@apply max-w-100 py-6 rounded-xl px-4 w-full max-h-120 my-20 m-10 flex flex-col justify-between items-center 
+		@apply max-w-100 py-6 rounded-xl px-4 w-full h-150 my-20 m-10 flex flex-col justify-between items-center 
 		bg-linear-to-b from-cyan-400 via-cyan-500 to-cyan-600 max-h-fit;
 	}
 
 	input {
-		@apply rounded bg-gray-100 flex p-2 grow outline-none hover:shadow-sm shadow-gray-500;
+		@apply rounded bg-gray-100 flex px-4 p-2 grow outline-none hover:shadow-sm shadow-gray-500;
 	}
 }
