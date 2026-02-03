@@ -18,13 +18,13 @@ export const MainPage: FC = () => {
 		if (stored) {
 			setWeather(JSON.parse(stored));
 		}
-	},[]);
-	
+	}, []);
+
 	useEffect(() => {
 		if (weather) {
 			localStorage.setItem("weather", JSON.stringify(weather));
 		}
-	},[weather]);
+	}, [weather]);
 
 	const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
 		setCity(event.target.value);
@@ -32,6 +32,8 @@ export const MainPage: FC = () => {
 
 	const loadWeather = async (): Promise<void> => {
 		setLoading(true);
+		setError(null);
+		setWeather(null);
 		try {
 			const response = await axios.get(
 				`${API_URL}&appid=${USER_API}&q=${city}`,
@@ -39,15 +41,16 @@ export const MainPage: FC = () => {
 			setWeather(response.data);
 		} catch {
 			setTimeout(() => {
+				localStorage.removeItem("weather");
 				handleInvalidInput();
-			}, 800)
+			}, 800);
 		} finally {
 			setTimeout(() => {
 				setLoading(false);
 			}, 800);
 		}
 	};
-	
+
 	const handleInvalidInput = (): void => {
 		setError("Invalid value");
 		setTimeout(() => {

@@ -15,6 +15,7 @@ export const Header: FC<IHeaderProps> = ({
 	city,
 	error
 }) => {
+
 	return (
 		<>
 			<section className="flex w-full items-center gap-1 mx-4">
